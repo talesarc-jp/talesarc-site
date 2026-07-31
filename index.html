@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社Tales Arc｜人と人、想いと未来をつなぐ。</title>
+<meta name="description" content="株式会社Tales Arcは、人や地域、事業が持つ物語や魅力を見つけ、必要としている人へ届ける会社です。SNS・コンテンツ支援、食・体験づくり、地域メディア・地域プロデュースを通じて、人と人との物語の架け橋になります。">
+<meta name="robots" content="index, follow">
+<!--
+  現在はGitHub PagesのURLを設定しています。
+  独自ドメイン（talesarc.com）へ切り替える際は、このURLと下のOGP設定を
+  すべて新しいドメインに書き換えてください（手順はREADME.mdに記載しています）。
+-->
+<link rel="canonical" href="https://talesarc-jp.github.io/talesarc-site/">
+
+<!-- OGP / SNSシェア設定 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="株式会社Tales Arc">
+<meta property="og:title" content="株式会社Tales Arc｜人と人、想いと未来をつなぐ。">
+<meta property="og:description" content="人や地域、事業が持つ物語や魅力を見つけ、必要としている人へ届ける会社です。">
+<meta property="og:url" content="https://talesarc-jp.github.io/talesarc-site/">
+<meta property="og:image" content="https://talesarc-jp.github.io/talesarc-site/assets/img/og-image.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="株式会社Tales Arc｜人と人、想いと未来をつなぐ。">
+<meta name="twitter:description" content="人や地域、事業が持つ物語や魅力を見つけ、必要としている人へ届ける会社です。">
+<meta name="twitter:image" content="https://talesarc-jp.github.io/talesarc-site/assets/img/og-image.png">
+
+<!-- ファビコン -->
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#a8613c">
+
+<!-- ファーストビューの写真を優先的に読み込み、表示速度を高めます -->
+<link rel="preload" as="image" href="assets/img/photos/hero.jpg" fetchpriority="high">
+
+<link rel="stylesheet" href="assets/css/style.css?v=2">
+<script>
+  /* 初回描画時にダークモードのちらつきが出ないよう、CSSより前に適用します */
+  (function () {
+    var saved = localStorage.getItem("ta-theme");
+    if (saved) {
+      document.documentElement.setAttribute("data-theme", saved);
+    }
+  })();
+</script>
+
+<!-- 検索エンジンに会社情報を伝える構造化データ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "株式会社Tales Arc",
+  "alternateName": "Tales Arc Inc.",
+  "url": "https://talesarc-jp.github.io/talesarc-site/",
+  "logo": "https://talesarc-jp.github.io/talesarc-site/assets/img/icon-512.png",
+  "email": "info@talesarc.com",
+  "description": "人や地域、事業が持つ物語や魅力を見つけ、必要としている人へ届ける会社です。",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "110-0005",
+    "addressRegion": "東京都",
+    "addressLocality": "台東区上野一丁目17番6号",
+    "addressCountry": "JP"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="siteHeader">
+  <!--
+    現在はロゴマークがないため、文字だけのワードマークを表示しています。
+    将来ロゴが完成したら assets/images/logo.svg を追加するだけで、
+    自動的にロゴへ切り替わります（コードの変更は不要です。仕組みはmain.js参照）。
+  -->
+  <a class="brand" href="#top">
+    <img class="brand-logo" alt="Tales Arc" hidden>
+    <span class="brand-wordmark">Tales Arc</span>
+  </a>
+  <div class="header-actions">
+    <nav aria-label="サイト内ナビゲーション">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="ダークモードを切り替える">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <ul>
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#business">Business</a></li>
+    <li><a href="#company">Company</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="top">
+    <!--
+      背景写真は assets/img/photos/hero.jpg です。
+      同じファイル名で写真を上書きするだけで差し替わります（詳しくはREADME.md参照）。
+    -->
+    <div class="hero-media" aria-hidden="true">
+      <img class="hero-photo" src="assets/img/photos/hero.jpg" alt="" width="2400" height="1500">
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Tales Arc</p>
+      <h1 class="hero-catch" data-key="hero.catch">人と人、<br>想いと未来をつなぐ。</h1>
+      <p class="hero-lead" data-key="hero.lead">株式会社Tales Arcは、人や地域、事業が持つ物語や魅力を見つけ、必要としている人へ届ける会社です。</p>
+    </div>
+  </section>
+
+  <!-- ============ Philosophy ============ -->
+  <section class="section" id="philosophy">
+    <div class="container section-inner">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-key="philosophy.label">Philosophy</p>
+        <h2 class="section-heading" data-key="philosophy.heading">物語と、架け橋。</h2>
+      </div>
+      <div class="philosophy-body">
+        <dl class="brand-words reveal">
+          <div class="brand-word">
+            <dt>Tales</dt>
+            <dd>物語</dd>
+          </div>
+          <div class="brand-word">
+            <dt>Arc</dt>
+            <dd>弧・架け橋</dd>
+          </div>
+        </dl>
+        <div data-key-list="philosophy.paragraphs">
+          <p class="reveal">どんな人にも、どんな場所にも、どんな仕事にも、まだ言葉になっていない物語があります。</p>
+          <p class="reveal">小さなお店の一皿に込められた想い。地域に受け継がれてきた景色。誰かが積み重ねてきた時間。それらは、気づかれないまま静かに眠っていることがほとんどです。</p>
+          <p class="reveal">私たちの社名「Tales Arc」は、Tales（物語）と Arc（弧・架け橋）という二つの言葉からできています。物語を見つけ、それを必要としている誰かのもとへ届けるための橋を架ける。それが、私たちの仕事だと考えています。</p>
+          <p class="reveal">SNSも、食も、地域も、私たちにとっては別々の事業ではありません。すべては「物語を見つけ、届ける」という一つの理念でつながっています。</p>
+          <p class="reveal">私たちは、物語と物語のあいだに立ち、静かに橋を架け続ける会社でありたいと思っています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Business ============ -->
+  <section class="section" id="business">
+    <div class="container section-inner">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-key="business.label">Business</p>
+        <h2 class="section-heading" data-key="business.heading">3つの事業、ひとつの理念。</h2>
+        <p class="section-lead" data-key="business.lead">事業の形はそれぞれ違っても、目指している場所は同じです。人や地域が持つ物語を見つけ、必要としている人へ届けること。</p>
+      </div>
+
+      <div>
+        <!--
+          各写真は assets/img/photos/business-1.jpg 〜 business-3.jpg です。
+          同じファイル名で写真を上書きするだけで差し替わります（詳しくはREADME.md参照）。
+        -->
+        <ol class="business-list" data-key-list="business.items">
+          <li class="business-item reveal">
+            <div class="business-photo">
+              <img src="assets/img/photos/business-1.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
+              <span class="business-index" aria-hidden="true">01</span>
+            </div>
+            <div>
+              <h3 class="business-title" data-field="title">SNS・コンテンツ支援</h3>
+              <p class="business-desc" data-field="description">Instagramを中心としたSNS運用支援、コンテンツ制作、ブランディング支援を行っています。伝えたい想いを、届くかたちに変えていくお手伝いをします。</p>
+            </div>
+          </li>
+          <li class="business-item reveal">
+            <div class="business-photo">
+              <img src="assets/img/photos/business-2.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
+              <span class="business-index" aria-hidden="true">02</span>
+            </div>
+            <div>
+              <h3 class="business-title" data-field="title">食・体験づくり</h3>
+              <p class="business-desc" data-field="description">オンラインお菓子教室、イベント、レシピ制作、動画制作など、食を通して学びや楽しさ、人とのつながりを生み出す活動を行っています。</p>
+            </div>
+          </li>
+          <li class="business-item reveal">
+            <div class="business-photo">
+              <img src="assets/img/photos/business-3.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
+              <span class="business-index" aria-hidden="true">03</span>
+            </div>
+            <div>
+              <h3 class="business-title" data-field="title">地域メディア・地域プロデュース</h3>
+              <p class="business-desc" data-field="description">地域の人・お店・文化・イベントを発信し、新しい出会いや地域とのつながりを生み出す活動を行っています。</p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="business-thread reveal">3つの事業は、すべて「人や地域が持つ物語をみつけ、必要としている人へ届ける」という、ひとつの理念でつながっています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Company ============ -->
+  <section class="section" id="company">
+    <div class="container section-inner">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-key="company.label">Company</p>
+        <h2 class="section-heading" data-key="company.heading">会社概要</h2>
+      </div>
+      <table class="company-table reveal" data-key-list="company.rows">
+        <tbody>
+          <tr><th scope="row" data-field="term">会社名</th><td data-field="detail">株式会社Tales Arc</td></tr>
+          <tr><th scope="row" data-field="term">所在地</th><td data-field="detail">〒110-0005　東京都台東区上野一丁目17番6号</td></tr>
+          <tr><th scope="row" data-field="term">活動拠点</th><td data-field="detail">埼玉県さいたま市岩槻区を中心に活動しています。</td></tr>
+          <tr><th scope="row" data-field="term">メールアドレス</th><td data-field="detail">info@talesarc.com</td></tr>
+          <tr><th scope="row" data-field="term">事業内容</th><td data-field="detail">SNS・コンテンツ支援 ／ 食・体験づくり ／ 地域メディア・地域プロデュース</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="section contact-section" id="contact">
+    <div class="container section-inner">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-key="contact.label">Contact</p>
+        <h2 class="section-heading" data-key="contact.heading">お問い合わせ</h2>
+        <p class="section-lead" data-key="contact.lead" style="margin-left:auto;margin-right:auto;">ご質問・ご相談は、メールにて承っております。下のボタンからお気軽にご連絡ください。</p>
+      </div>
+      <div class="contact-body reveal">
+        <a class="mail-button" id="mailButton" href="mailto:info@talesarc.com">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span data-key="contact.buttonLabel">メールを送る</span>
+        </a>
+        <p class="mail-address" id="mailAddress" data-key="contact.email">info@talesarc.com</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-copyright">&copy; <span id="footerYear"></span> <span data-key="footer.copyright">Tales Arc Inc. All Rights Reserved.</span></p>
+    <ul class="footer-links">
+      <li><a href="privacy.html" data-key="footer.privacyLabel">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="content/content.js?v=1"></script>
+<script src="assets/js/main.js?v=1"></script>
+</body>
+</html>

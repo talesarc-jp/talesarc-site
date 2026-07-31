@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ページが見つかりません｜株式会社Tales Arc</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css?v=2">
+<script>
+  (function () {
+    var saved = localStorage.getItem("ta-theme");
+    if (saved) document.documentElement.setAttribute("data-theme", saved);
+  })();
+</script>
+</head>
+<body>
+<main class="not-found">
+  <p class="eyebrow">404</p>
+  <h1>ページが見つかりませんでした</h1>
+  <p class="not-found-text">お探しのページは移動または削除された可能性があります。トップページからお探しください。</p>
+  <!--
+    このリンクは、404ページがサイトのどの階層からでも正しくトップに戻れるよう
+    サイトのルートパスを直接指定しています（相対パスだと迷子のURLの深さに
+    よって壊れることがあるため）。リポジトリ名を変更したとき、または
+    独自ドメイン（talesarc.com）に切り替えたときは、README.mdの手順に沿って
+    このURLも書き換えてください。
+  -->
+  <a class="mail-button" href="/talesarc-site/">トップページへ戻る</a>
+</main>
+</body>
+</html>

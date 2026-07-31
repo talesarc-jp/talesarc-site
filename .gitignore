@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Local env files (念のため。このサイトは環境変数を使いませんが、誤って追加された場合に備えて)
+.env
+.env.*
