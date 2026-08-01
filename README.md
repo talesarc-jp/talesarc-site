@@ -98,7 +98,7 @@ talesarc-site/
 ## 4. GitHubへ公開する（はじめての方向け・手順つき）
 
 GitHub Pagesは、GitHubに保存したファイルをそのままホームページとして公開できる無料の仕組みです。
-このサイトは、現在 **GitHub PagesのURL（`https://talesarc-jp.github.io/talesarc-site/`）** を前提に設定されています。
+このサイトは、独自ドメイン **`https://talesarc.com/`** で公開されています（GitHub PagesのURL `https://talesarc-jp.github.io/talesarc-site/` からも自動的に転送されます）。
 
 このフォルダは、すでに `git`（変更履歴を管理する仕組み）で管理できる状態（1回目の記録＝コミット済み）になっています。以下の手順どおりに進めれば、迷わず公開できます。
 
@@ -161,18 +161,20 @@ git push
 
 ---
 
-## 5. 独自ドメイン（talesarc.com）に切り替える手順
+## 5. 独自ドメイン（talesarc.com）について
 
-将来、独自ドメイン（`talesarc.com`）を取得したときは、以下の手順で切り替えられます。
+このサイトは、独自ドメイン **`https://talesarc.com/`** に接続済みです。
 
-1. お使いのドメイン管理サービス（お名前.comなど）で、GitHub Pages向けのDNS設定を行う
-   - Aレコード、またはCNAMEレコードをGitHubの案内に沿って設定します（詳細はGitHub公式ヘルプ「Managing a custom domain for your GitHub Pages site」を参照してください）
-2. リポジトリ直下に `CNAME` という名前のファイル（拡張子なし）を作成し、中身に `talesarc.com` とだけ書いて保存する
-3. GitHubの「Settings」→「Pages」画面で、独自ドメインが反映されていることを確認する
-4. 反映まで数十分〜最大24時間ほどかかることがあります
-5. 下記の「URLを直す場所」を、すべて `https://talesarc.com/` に書き換える
+設定内容（今後、参考にする場合のために記録しています）：
 
-### URLを直す場所（GitHub Pages ⇔ 独自ドメイン 切り替え共通）
+- お名前.comの `talesarc.com` のDNS設定に、GitHub Pages用のAレコードを4つ追加（既存のメール用MX・TXTレコードはそのまま）
+- リポジトリ直下に `CNAME` というファイルがあり、中身は `talesarc.com`（GitHubの「Settings」→「Pages」で独自ドメインを設定すると自動的に作成されます）
+- GitHubの「Settings」→「Pages」で「HTTPSを強制する」を有効化済み
+- サイト内のURL設定（下記表）はすべて `https://talesarc.com/` に統一済み
+
+### 参考：URLを直す場所（今後ドメインを変更する場合）
+
+万が一、別のドメインに変更する場合は、以下の場所を新しいURLに書き換えてください。
 
 | ファイル | 書き換える箇所 |
 | --- | --- |
@@ -180,9 +182,10 @@ git push
 | `content/content.js` | `meta.url` |
 | `robots.txt` | `Sitemap:` の行 |
 | `sitemap.xml` | `<loc>` の中身 |
-| `404.html` | 「トップページへ戻る」ボタンの `href="/talesarc-site/"` の部分。独自ドメインに切り替えたときは `href="/"` に書き換えてください |
+| `404.html` | 「トップページへ戻る」ボタンの `href` |
+| `CNAME` | ファイルの中身 |
 
-すべて `https://talesarc-jp.github.io/talesarc-site/` の部分を探して、新しいURL（例：`https://talesarc.com/`）に置き換えれば完了です。
+すべて `https://talesarc.com/` の部分を探して、新しいURLに置き換えれば完了です。
 
 ---
 
@@ -193,7 +196,7 @@ git push
 ### ① Google Search Consoleにサイトを登録する
 
 1. [Google Search Console](https://search.google.com/search-console) を開き、Googleアカウントでログインする
-2. 「プロパティを追加」→「URLプレフィックス」を選び、`https://talesarc-jp.github.io/talesarc-site/`（独自ドメインに切り替え済みの場合は `https://talesarc.com/`）を入力する
+2. 「プロパティを追加」→「URLプレフィックス」を選び、`https://talesarc.com/` を入力する
 3. 所有権の確認方法として「HTMLタグ」を選ぶと、`<meta name="google-site-verification" content="...">` という1行が表示されます
 4. その1行を `index.html` の `<head>` タグの中（他の `<meta>` タグが並んでいる場所）に追加して保存し、GitHubへPushする
 5. Search Consoleの画面に戻り「確認」ボタンを押す
@@ -205,11 +208,9 @@ git push
 
 ### ③ 個別ページのインデックス登録をリクエストする
 
-1. Search Consoleの上部にある検索窓に、公開したサイトのURL（例：`https://talesarc-jp.github.io/talesarc-site/`）を貼り付けて検索する
+1. Search Consoleの上部にある検索窓に、公開したサイトのURL（例：`https://talesarc.com/`）を貼り付けて検索する
 2. 「インデックス登録をリクエスト」ボタンを押す
 3. 数分〜数日でGoogleがサイトを確認し、検索結果に表示されるようになります（すぐには反映されないことがあります）
-
-独自ドメインに切り替えた場合は、Search Console上に新しいプロパティ（`https://talesarc.com/`）を追加登録し、①〜③を改めて行ってください。
 
 ---
 

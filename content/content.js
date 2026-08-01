@@ -15,9 +15,7 @@ const SITE_CONTENT = {
     title: "株式会社Tales Arc｜人と人、想いと未来をつなぐ。",
     description:
       "株式会社Tales Arcは、人や地域、事業が持つ物語や魅力を見つけ、必要としている人へ届ける会社です。SNS・コンテンツ支援、食・体験づくり、地域メディア・地域プロデュースを通じて、人と人との物語の架け橋になります。",
-    // 現在はGitHub PagesのURLです。独自ドメインに切り替えたときはREADME.mdの手順に沿って書き換えてください
-    // （index.html内のOGP設定・robots.txt・sitemap.xmlも合わせて変更が必要です）
-    url: "https://talesarc-jp.github.io/talesarc-site/",
+    url: "https://talesarc.com/",
   },
 
   // Hero（最初に表示される部分）

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://talesarc-jp.github.io/talesarc-site/sitemap.xml
+Sitemap: https://talesarc.com/sitemap.xml
