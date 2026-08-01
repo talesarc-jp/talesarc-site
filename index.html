@@ -40,7 +40,7 @@
 <!-- ファーストビューの写真を優先的に読み込み、表示速度を高めます -->
 <link rel="preload" as="image" href="assets/img/photos/hero.jpg" fetchpriority="high">
 
-<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
 <script>
   /* 初回描画時にダークモードのちらつきが出ないよう、CSSより前に適用します */
   (function () {
@@ -204,6 +204,14 @@
             <div>
               <h3 class="business-title" data-field="title">地域メディア・地域プロデュース</h3>
               <p class="business-desc" data-field="description">地域の人・お店・文化・イベントを発信し、新しい出会いや地域とのつながりを生み出す活動を行っています。</p>
+              <a
+                class="business-instagram-link"
+                data-field="instagramLabel"
+                data-field-href="instagramUrl"
+                href="https://www.instagram.com/iwatsuki_plus/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >いわプラ Instagramを見る</a>
             </div>
           </li>
         </ol>
@@ -224,7 +232,7 @@
         <tbody>
           <tr><th scope="row" data-field="term">会社名</th><td data-field="detail">株式会社Tales Arc</td></tr>
           <tr><th scope="row" data-field="term">所在地</th><td data-field="detail">〒110-0005　東京都台東区上野一丁目17番6号</td></tr>
-          <tr><th scope="row" data-field="term">活動拠点</th><td data-field="detail">埼玉県さいたま市岩槻区を中心に活動しています。</td></tr>
+          <tr><th scope="row" data-field="term">活動拠点</th><td data-field="detail">埼玉県さいたま市を中心に活動しています。</td></tr>
           <tr><th scope="row" data-field="term">メールアドレス</th><td data-field="detail">info@talesarc.com</td></tr>
           <tr><th scope="row" data-field="term">事業内容</th><td data-field="detail">SNS・コンテンツ支援 ／ 食・体験づくり ／ 地域メディア・地域プロデュース</td></tr>
         </tbody>
@@ -262,6 +270,6 @@
 </footer>
 
 <script src="content/content.js?v=1"></script>
-<script src="assets/js/main.js?v=1"></script>
+<script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

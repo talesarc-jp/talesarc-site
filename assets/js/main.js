@@ -63,12 +63,17 @@
         if (!itemEl) return;
         Object.keys(item).forEach(function (field) {
           var fieldEl = itemEl.querySelector('[data-field="' + field + '"]');
-          if (!fieldEl) return;
-          if (fieldEl.tagName === "IMG") {
-            fieldEl.setAttribute("alt", item[field]);
-          } else {
-            fieldEl.textContent = item[field];
+          if (fieldEl) {
+            if (fieldEl.tagName === "IMG") {
+              fieldEl.setAttribute("alt", item[field]);
+            } else {
+              fieldEl.textContent = item[field];
+            }
           }
+          // data-field-href="◯◯" は、同じ要素の href をこの項目の値で更新します
+          // （例：Instagramリンクのように、文字とリンク先を別々の項目で管理する場合）
+          var hrefEl = itemEl.querySelector('[data-field-href="' + field + '"]');
+          if (hrefEl) hrefEl.setAttribute("href", item[field]);
         });
       });
     });

@@ -65,6 +65,10 @@ const SITE_CONTENT = {
         description:
           "地域の人・お店・文化・イベントを発信し、新しい出会いや地域とのつながりを生み出す活動を行っています。",
         photoAlt: "地域の街並みの風景",
+        // 運営している地域メディア「いわプラ」のInstagramへのリンクです。
+        // URLやリンクの文言を変更したいときは、この2行を書き換えてください。
+        instagramLabel: "いわプラ Instagramを見る",
+        instagramUrl: "https://www.instagram.com/iwatsuki_plus/",
       },
     ],
   },
@@ -79,7 +83,7 @@ const SITE_CONTENT = {
         term: "所在地",
         detail: "〒110-0005　東京都台東区上野一丁目17番6号",
       },
-      { term: "活動拠点", detail: "埼玉県さいたま市岩槻区を中心に活動しています。" },
+      { term: "活動拠点", detail: "埼玉県さいたま市を中心に活動しています。" },
       { term: "メールアドレス", detail: "info@talesarc.com" },
       {
         term: "事業内容",

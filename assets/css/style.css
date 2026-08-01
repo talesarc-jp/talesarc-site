@@ -413,6 +413,36 @@ a {
   max-width: 44ch;
 }
 
+.business-instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  color: var(--color-accent);
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: opacity var(--transition);
+}
+
+.business-instagram-link::after {
+  content: "↗";
+  font-size: 0.85em;
+  transition: transform 0.3s ease;
+}
+
+.business-instagram-link:hover,
+.business-instagram-link:focus-visible {
+  opacity: 0.72;
+}
+
+.business-instagram-link:hover::after,
+.business-instagram-link:focus-visible::after {
+  transform: translate(2px, -2px);
+}
+
 .business-thread {
   margin-top: 96px;
   padding-top: 48px;
