@@ -327,3 +327,6 @@ html{scroll-behavior:auto}
 /* Fuller marginal sketches, with speech bubbles optically balanced. */
 @media(min-width:700px){.support-sketch{width:146px;height:62px;bottom:-16px}.support .sketch-3{width:156px;height:60px;bottom:-23px}}
 @media(max-width:699px){.support-sketch{width:68px;height:26px;bottom:0}.support .sketch-3{width:76px;height:28px}}
+
+/* Keep the mobile closing caption clear of the tilted photograph. */
+@media(max-width:699px){.share-photo{top:20%}}
