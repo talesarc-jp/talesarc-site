@@ -317,3 +317,9 @@ html{scroll-behavior:auto}
 .booking .booking-price{font-size:13px;margin-top:12px}
 .booking #pending-note{margin:10px auto 0;font-size:12px}
 @media(min-width:700px){.booking{padding-top:110px;padding-bottom:115px}.booking h2{font-size:23px}.booking .booking-link{min-height:120px;font-size:32px;margin-top:36px;margin-bottom:30px}.booking .booking-status{font-size:14px}}
+
+/* Quiet marginal pen sketches: no change to row or copy placement. */
+.support dt{position:relative}
+.support-sketch{display:none;pointer-events:none}
+@media(min-width:700px){.support-sketch{display:block;position:absolute;right:4px;bottom:-12px;width:112px;height:48px;object-fit:contain;opacity:.7;transform:rotate(-3deg)}.support .sketch-2{right:15px;transform:rotate(2deg)}.support .sketch-3{width:85px;height:33px;bottom:-20px}.support .sketch-4{right:8px;transform:rotate(-1deg)}}
+@media(max-width:699px){.support>div{position:relative}.support dt{position:static}.support-sketch{display:block;position:absolute;right:6px;bottom:2px;width:52px;height:22px;object-fit:contain;opacity:.65;transform:rotate(-3deg)}}
