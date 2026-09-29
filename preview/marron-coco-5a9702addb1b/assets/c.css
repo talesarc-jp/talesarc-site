@@ -301,3 +301,7 @@ html{scroll-behavior:auto}
 .teacher-signature.teacher-signature-art{display:block;max-width:740px;margin:36px auto 0}
 .teacher-signature-art img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
 @media(min-width:700px){.teacher .teacher-bio .teacher-belief{font-size:18px}.teacher-signature.teacher-signature-art{margin-top:40px}}
+
+/* Let the portrait finish at the next section boundary. */
+.teacher{padding-bottom:0}
+.teacher-signature.teacher-signature-art{margin-bottom:0}
