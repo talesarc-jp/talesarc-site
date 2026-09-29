@@ -264,3 +264,13 @@ html{scroll-behavior:auto}
 .coco-copy p{font-size:clamp(18px,4.8vw,25.2px);padding:22px 24px;line-height:1.75;letter-spacing:0}
 @media(max-width:360px){.coco-copy p{font-size:17px;padding:20px 17px}}
 @media(min-width:700px){.coco-copy{right:6%}.coco-copy p{font-size:39px;padding:28px 42px}}
+
+/* Keep the intended two-line heading and a single-line question. */
+.cross-intro h2{white-space:nowrap;flex-shrink:0}
+.cross-question{white-space:nowrap;margin-left:0;text-align:right;font-size:clamp(12px,4.15vw,17px)}
+.cross-type{transform:translateY(36px)}
+@media(min-width:700px){.cross-intro{gap:16px}.cross-question{margin-right:0;font-size:clamp(13px,1.85vw,21px)}.cross-type{transform:translateY(60px)}}
+@media(min-width:1100px){.cross-intro{gap:40px}.cross-question{font-size:21px}.cross-type{transform:translateY(60px)}}
+
+@media(max-width:699px){.cross-question{min-height:64.6px}}
+@media(max-width:360px){.cross-question{min-height:60.8px}}
