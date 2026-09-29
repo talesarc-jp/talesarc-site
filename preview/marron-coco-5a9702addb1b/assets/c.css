@@ -250,3 +250,11 @@ html{scroll-behavior:auto}
 .footer-legal a:hover{color:var(--cream)}
 .footer-legal small{font-size:inherit}
 @media(max-width:699px){.footer-legal{display:block}.footer-legal nav{gap:8px 18px}.footer-legal small{display:block;margin-top:15px}}
+
+/* Slice: MARIAGE and the photograph share the composition. */
+.inside-title span{margin-left:.35em}
+.inside-word{left:-2%;top:34%;font-size:21vw;line-height:1;white-space:nowrap;letter-spacing:-.055em}
+.inside-cake{width:70%;height:46%;left:27%;top:40%}
+@media(max-width:360px){.inside-cake{width:70%;height:44%;top:40%}.inside-title{font-size:32px}}
+@media(min-width:700px){.inside-word{left:-3%;top:36%;font-size:22vw}.inside-cake{width:50%;height:58%;left:51%;top:44%}}
+@media(min-width:1100px){.inside-word{left:-2%;top:32%;font-size:20vw}.inside-cake{width:44%;height:58%;left:56%;top:44%}}
