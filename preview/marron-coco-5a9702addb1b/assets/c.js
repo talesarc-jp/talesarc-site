@@ -16,13 +16,16 @@
     }
   } catch (_) { /* Keep an unfinished LINE URL inactive. */ }
   const status = document.querySelector('#open-text');
-  if (config.openText) status.textContent = config.openText;
+  if (config.receptionPeriod) status.textContent = `受付期間：${config.receptionPeriod}`;
+  else if (config.openText) status.textContent = config.openText;
   const link = document.querySelector('#booking-link');
   try {
     const url = config.bookingUrl && new URL(config.bookingUrl);
     if (url && url.protocol === 'https:') {
       link.href = url.href;
-      link.hidden = false;
+      link.removeAttribute("aria-disabled");
+      link.removeAttribute("role");
+      link.removeAttribute("aria-describedby");
       document.querySelector('#pending-note').hidden = true;
     }
   } catch (_) { /* An incomplete URL must never become a broken action. */ }

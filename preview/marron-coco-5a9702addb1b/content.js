@@ -1,6 +1,7 @@
 /* Cのみの設定。A/Bとは共有しません。未確定のURLや日程詳細を捏造しません。 */
 window.MARRON_COCO_C = {
   lineUrl: "", // 確定したLINEのHTTPS URLを入力すると、プロフィールのアイコンがリンクになります。
-  bookingUrl: "",
-  openText: "受付開始は決まりしだいお知らせします。"
+  bookingUrl: "", // 確定した申し込みページのHTTPS URLを入力するとボタンが有効になります。
+  receptionPeriod: "", // 例：10月1日 11:00 〜 10月7日 23:59。確定後に入力。
+  openText: "受付期間：決まりしだいお知らせします。"
 };
