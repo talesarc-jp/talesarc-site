@@ -258,3 +258,9 @@ html{scroll-behavior:auto}
 @media(max-width:360px){.inside-cake{width:70%;height:44%;top:40%}.inside-title{font-size:32px}}
 @media(min-width:700px){.inside-word{left:-3%;top:36%;font-size:22vw}.inside-cake{width:50%;height:58%;left:51%;top:44%}}
 @media(min-width:1100px){.inside-word{left:-2%;top:32%;font-size:20vw}.inside-cake{width:44%;height:58%;left:56%;top:44%}}
+
+/* Larger coconut caption, anchored to the right. */
+.coco-copy{left:auto;right:var(--gutter);max-width:calc(100% - 2 * var(--gutter))}
+.coco-copy p{font-size:clamp(18px,4.8vw,25.2px);padding:22px 24px;line-height:1.75;letter-spacing:0}
+@media(max-width:360px){.coco-copy p{font-size:17px;padding:20px 17px}}
+@media(min-width:700px){.coco-copy{right:6%}.coco-copy p{font-size:39px;padding:28px 42px}}
