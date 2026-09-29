@@ -330,3 +330,7 @@ html{scroll-behavior:auto}
 
 /* Keep the mobile closing caption clear of the tilted photograph. */
 @media(max-width:699px){.share-photo{top:20%}}
+
+/* Chestnuts softly visible through the burgundy CTA layer. */
+.booking{background-image:linear-gradient(rgba(112,40,61,.82),rgba(112,40,61,.82)),url("../images/cta-chestnuts.png");background-size:cover;background-position:center}
+.booking .booking-status{max-width:680px;text-wrap:balance}
