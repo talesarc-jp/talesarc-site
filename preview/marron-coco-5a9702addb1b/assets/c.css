@@ -295,3 +295,9 @@ html{scroll-behavior:auto}
 .teacher .teacher-signature .teacher-handwriting{font-family:"Klee One",cursive;font-size:clamp(12px,3.45vw,18px);font-weight:400;line-height:2.25;letter-spacing:-.035em;white-space:nowrap;margin:0;transform:rotate(-2deg)}
 @media(min-width:700px){.teacher-signature{grid-template-columns:280px 1fr;gap:42px;margin-top:52px}.teacher .teacher-signature .teacher-handwriting{font-size:22px}}
 @media(max-width:360px){.teacher-signature{gap:13px;grid-template-columns:40% 1fr}}
+
+/* Supplied transparent portrait and original handwriting, kept as one artwork. */
+.teacher .teacher-bio .teacher-belief{font-size:15px}
+.teacher-signature.teacher-signature-art{display:block;max-width:740px;margin:36px auto 0}
+.teacher-signature-art img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+@media(min-width:700px){.teacher .teacher-bio .teacher-belief{font-size:18px}.teacher-signature.teacher-signature-art{margin-top:40px}}
