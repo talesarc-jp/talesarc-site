@@ -40,7 +40,7 @@
 <!-- ファーストビューの写真を優先的に読み込み、表示速度を高めます -->
 <link rel="preload" as="image" href="assets/img/photos/hero.jpg" fetchpriority="high">
 
-<link rel="stylesheet" href="assets/css/style.css?v=3">
+<link rel="stylesheet" href="assets/css/style.css?v=camera-20260929">
 <script>
   /* 初回描画時にダークモードのちらつきが出ないよう、CSSより前に適用します */
   (function () {
@@ -172,13 +172,13 @@
 
       <div>
         <!--
-          各写真は assets/img/photos/business-1.jpg 〜 business-3.jpg です。
+          事業写真は assets/img/photos/ の content-camera.jpg、parfait-making.jpg、nobu-community.jpg です。
           同じファイル名で写真を上書きするだけで差し替わります（詳しくはREADME.md参照）。
         -->
         <ol class="business-list" data-key-list="business.items">
           <li class="business-item reveal">
             <div class="business-photo">
-              <img src="assets/img/photos/business-1.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
+              <img src="assets/img/photos/content-camera.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
               <span class="business-index" aria-hidden="true">01</span>
             </div>
             <div>
@@ -188,7 +188,7 @@
           </li>
           <li class="business-item reveal">
             <div class="business-photo">
-              <img src="assets/img/photos/business-2.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
+              <img src="assets/img/photos/parfait-making.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
               <span class="business-index" aria-hidden="true">02</span>
             </div>
             <div>
@@ -198,7 +198,7 @@
           </li>
           <li class="business-item reveal">
             <div class="business-photo">
-              <img src="assets/img/photos/business-3.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
+              <img src="assets/img/photos/nobu-community.jpg" alt="" data-field="photoAlt" loading="lazy" width="1600" height="1200">
               <span class="business-index" aria-hidden="true">03</span>
             </div>
             <div>
@@ -264,12 +264,13 @@
   <div class="container footer-inner">
     <p class="footer-copyright">&copy; <span id="footerYear"></span> <span data-key="footer.copyright">Tales Arc Inc. All Rights Reserved.</span></p>
     <ul class="footer-links">
-      <li><a href="privacy.html" data-key="footer.privacyLabel">Privacy Policy</a></li>
+      <li><a href="tokushoho.html">特商法に基づく表記</a></li>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
     </ul>
   </div>
 </footer>
 
-<script src="content/content.js?v=1"></script>
+<script src="content/content.js?v=camera-20260929"></script>
 <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

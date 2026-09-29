@@ -749,3 +749,13 @@ a {
   margin: 0 0 32px;
   max-width: 40ch;
 }
+
+/* Legal links remain readable on narrow screens. */
+.footer-links{flex-wrap:wrap;gap:10px 20px}
+.footer-links a{display:inline-block;padding:6px 0;text-decoration:underline;text-underline-offset:4px}
+
+/* Match the two supplied photos with restrained, warm-neutral tones. */
+.business-photo img[src*="parfait-making"]{filter:brightness(1.06) saturate(.86) contrast(.96);object-position:50% 48%}
+.business-photo img[src*="nobu-community"]{filter:brightness(1.02) saturate(.8) contrast(.96);object-position:50% 48%}
+
+.business-photo img[src*="content-camera"]{object-position:50% 93%;filter:brightness(1.04) saturate(.78) contrast(.96)}
